@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>מתנה לעובדים במלונות המיוחדים בישראל | Unique Hotels of Israel</title>
+<meta name="description" content="Unique Cash — שובר לילה עם ארוחת בוקר ביותר מ־20 מלונות בוטיק, מצפת ועד אילת. לא מומר לקניות בסופר, העובד באמת יוצא לנפוש.">
+<link rel="canonical" href="https://www.melenot.com/page/">
+<meta property="og:title" content="מתנה לעובדים במלונות המיוחדים בישראל">
+<meta property="og:description" content="שובר לילה עם ארוחת בוקר ביותר מ־20 מלונות בוטיק. לא מומר לקניות בסופר, העובד באמת יוצא לנפוש.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:image" content="https://www.melenot.com/img/img00.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Noto+Sans+Hebrew:wght@400;500;600;700&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* fonts lifted from the source PDF (subsets, cmap rebuilt) */
+@font-face{font-family:'EFT Regga';src:url('/fonts/eft-regga.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'New Icon Script';src:url('/fonts/new-icon-script.ttf') format('truetype');font-display:swap}
+
+:root{
+  --u:1.58px;                 /* 1 PDF point */
+  --ink:#17231d; --body:#414b43; --mute:#66736b;
+  --cream:#e7d5b7; --fmute:#cfd9d3; --fmute2:#d3ddd7; --script:#d5dfd9;
+  --heb:'Noto Sans Hebrew','Assistant',sans-serif;
+  --disp:'Belleza',Georgia,serif;
+  --cal:'Assistant','Noto Sans Hebrew',sans-serif;   /* stands in for Calibri */
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:#fff}
+/* no background on body on purpose: html's white propagates to the canvas, so
+   the field at z-index:-1 paints above it and below every element. Give body a
+   background of its own and it covers the field. */
+body{color:var(--body);font-family:var(--heb);
+     -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+.page{max-width:calc(595 * var(--u));margin:0 auto;background:#fff}
+.pad{padding:0 calc(35 * var(--u))}
+
+/* ============ hero ============ */
+.hero{background:var(--ink);height:calc(198 * var(--u));position:relative;overflow:hidden}
+.hero .photo{position:absolute;inset:0 calc(27.16 * var(--u));overflow:hidden}
+.hero .photo img{width:100%;height:100%;object-fit:fill}
+.hero .photo::after{content:'';position:absolute;inset:0;background:#17231d;opacity:.72}
+.hero .dash{position:absolute;top:calc(26 * var(--u));left:calc(32 * var(--u));
+  width:calc(40 * var(--u));height:calc(3.2 * var(--u));background:#fff}
+.hero .txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero .brand{font-family:var(--disp);color:#fff;font-size:calc(22.5 * var(--u));
+  letter-spacing:calc(3.1 * var(--u));margin-top:calc(48 * var(--u));line-height:1;
+  padding-right:calc(3.1 * var(--u))}
+.hero h1{font-family:var(--heb);font-weight:400;color:#fff;font-size:calc(17.5 * var(--u));
+  margin-top:calc(21 * var(--u));line-height:1.25}
+.hero .script{font-family:'EFT Regga',var(--heb);color:var(--script);
+  font-size:calc(13.5 * var(--u));margin-top:calc(26 * var(--u));line-height:1}
+
+/* ============ product ============ */
+.product{display:grid;grid-template-columns:calc(197 * var(--u)) 1fr calc(180 * var(--u));
+  padding-top:calc(20 * var(--u))}
+.product .shot{grid-column:3;grid-row:1}
+.product .shot img{width:100%}
+.product .cap{font-size:calc(10 * var(--u));color:var(--mute);margin-top:calc(9 * var(--u));line-height:1.4}
+.product .copy{grid-column:1;grid-row:1}
+h2{font-family:var(--heb);font-weight:400;color:var(--ink);line-height:1.15}
+.product h2{font-size:calc(20 * var(--u))}
+.product .eyebrow{font-family:var(--disp);color:var(--mute);font-size:calc(13 * var(--u));
+  margin-top:calc(11 * var(--u));line-height:1}
+.product .statement{color:var(--ink);font-size:calc(15 * var(--u));margin-top:calc(15 * var(--u));line-height:1.35}
+.product p.b{color:var(--body);font-size:calc(11 * var(--u));margin-top:calc(12 * var(--u));line-height:1.4}
+
+/* ============ differentiators ============ */
+.diff{padding-top:calc(28 * var(--u))}
+.diff h2{font-size:calc(15.5 * var(--u));text-align:right}
+.rule{border:0;border-top:calc(.8 * var(--u)) solid var(--ink);margin:0}
+.diff .rule.first{margin-top:calc(14 * var(--u))}
+.cells{display:grid;grid-template-columns:1fr 1fr}
+.cell{padding:calc(9 * var(--u)) 0 calc(11 * var(--u));text-align:right}
+.cell h3{font-family:var(--cal);font-weight:700;color:var(--ink);font-size:calc(12 * var(--u));line-height:1.2;max-width:calc(160 * var(--u));margin-right:0;margin-left:auto}
+.cell p{font-size:calc(10 * var(--u));color:var(--body);margin-top:calc(8 * var(--u));line-height:1.4;max-width:calc(140 * var(--u));margin-right:0;margin-left:auto}
+
+/* ============ steps ============ */
+.steps-wrap{padding-top:calc(6 * var(--u))}
+.steps-wrap h2{font-size:calc(13.5 * var(--u));text-align:center}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:calc(17 * var(--u))}
+.step{text-align:center}
+.step .n{font-family:'New Icon Script',var(--disp);color:var(--mute);
+  font-size:calc(13.5 * var(--u));line-height:1}
+.step b{display:block;font-family:var(--cal);font-weight:700;color:var(--ink);
+  font-size:calc(11 * var(--u));margin-top:calc(10 * var(--u));line-height:1.2}
+.step span{display:block;font-family:var(--cal);color:var(--mute);
+  font-size:calc(9 * var(--u));margin-top:calc(5 * var(--u));line-height:1.2}
+
+/* ============ hotel logos ============ */
+.logos-wrap{padding-top:calc(20 * var(--u));padding-bottom:calc(6 * var(--u))}
+.logos-cap{text-align:center;font-size:calc(9.5 * var(--u));color:var(--mute);line-height:1}
+.logos{display:grid;grid-template-columns:repeat(4,1fr);
+  align-items:center;justify-items:center;margin-top:calc(15 * var(--u));
+  row-gap:calc(13 * var(--u))}
+.logos img{height:auto}
+
+/* ============ footer ============ */
+footer{background:var(--ink);color:#fff;display:flex;justify-content:space-between;align-items:center;
+  padding:calc(12 * var(--u)) calc(35 * var(--u)) calc(13 * var(--u));gap:calc(20 * var(--u))}
+footer .r{text-align:right}
+footer .r h3{font-family:var(--heb);font-weight:400;font-size:calc(13.5 * var(--u));line-height:1.2}
+footer .r p{font-family:var(--cal);font-weight:700;color:var(--cream);
+  font-size:calc(10 * var(--u));margin-top:calc(8 * var(--u));line-height:1.2}
+footer .l{text-align:left;direction:ltr;font-family:var(--cal)}
+footer .l .b{font-weight:700;color:var(--fmute);font-size:calc(8.5 * var(--u));letter-spacing:.02em}
+footer .l .u{font-weight:700;color:#fff;font-size:calc(11 * var(--u));margin-top:calc(4 * var(--u));
+  text-decoration:none;display:block}
+footer .l .i{color:var(--fmute2);font-size:calc(8 * var(--u));margin-top:calc(4 * var(--u))}
+
+
+
+/* ============ the ground ============
+   The arc field from the Vinoli landing page (`landing-page/src/components/Arcs.astro`
+   + `.pattern-arcs` in `src/styles/global.css`), same geometry, retuned to this
+   client's palette. Two radial gradients tiled against one another: pure CSS, no
+   image to load, crisp at any size, ~1.2KB.
+
+   The light tone equals the ground it sits on, which is what makes the field read
+   as paper catching light rather than as a texture laid over the page. Keep the two
+   tones close - the whole effect dies the moment it becomes visible as a pattern. */
+.page-field{
+  --pat-s:320px;
+  --pat-a:#eef2ef; --pat-b:#e8eee9; --pat-sh:#17231d0a;
+  --_g:var(--pat-b) 4% 14%, var(--pat-a) 14% 24%, var(--pat-b) 22% 34%,
+       var(--pat-a) 34% 44%, var(--pat-b) 44% 56%, var(--pat-a) 56% 66%,
+       var(--pat-b) 66% 76%, var(--pat-a) 76% 86%, var(--pat-b) 86% 96%;
+  position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(100% 100% at 100% 0, var(--pat-a) 4%, var(--_g), var(--pat-sh) 96%, #0000),
+    radial-gradient(100% 100% at 0 100%, #0000, var(--pat-sh) 4%, var(--_g), var(--pat-a) 96%)
+    var(--pat-a);
+  background-size:var(--pat-s) var(--pat-s);
+}
+/* The warm alternative, off the cream accent instead of the hotel green.
+   To switch the whole page: <body data-ground="cream">. */
+body[data-ground=cream] .page-field{--pat-a:#f7f2e9; --pat-b:#f1eadd; --pat-sh:#17231d0a}
+
+/* The sheet. Only from 761px up, where there are gutters for the field to show in;
+   on mobile the page IS the viewport and a floating sheet makes no sense. */
+@media (min-width:761px){
+  .page{margin:calc(26 * var(--u)) auto;
+        box-shadow:0 calc(2 * var(--u)) calc(5 * var(--u)) #17231d14,
+                   0 calc(10 * var(--u)) calc(38 * var(--u)) #17231d24}
+}
+
+/* ============ mobile: reflow, do not shrink ============ */
+@media (max-width:760px){
+  :root{--u:1px}
+  .page{max-width:none;overflow-x:hidden}
+  .pad{padding:0 20px}
+
+  .hero{height:auto;min-height:0;padding:38px 0 34px;position:relative;background:var(--ink)}
+  .hero .photo{inset:0}
+  .hero .photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .hero .txt{position:relative;inset:auto;padding:0 20px}
+  .hero .dash{top:16px;left:20px;width:34px;height:3px}
+  .hero .brand{font-size:15px;letter-spacing:.24em;margin-top:0;padding-right:.24em;
+    line-height:1.5;max-width:100%}
+  .hero h1{font-size:23px;margin-top:12px;line-height:1.35}
+  .hero .script{font-size:18px;margin-top:16px}
+
+  .product{grid-template-columns:1fr;padding-top:30px;gap:20px}
+  .product .copy{grid-column:1;grid-row:1}
+  .product .shot{grid-column:1;grid-row:2;max-width:320px}
+  .product h2{font-size:25px}
+  .product .eyebrow{font-size:16px;margin-top:7px}
+  .product .statement{font-size:19px;margin-top:12px}
+  .product .statement br{display:none}
+  .product p.b{font-size:16px;margin-top:12px}
+  .product .cap{font-size:13px;margin-top:8px}
+
+  .diff{padding-top:32px}
+  .diff h2{font-size:21px}
+  .diff .rule.first{margin-top:12px}
+  .cells{grid-template-columns:1fr}
+  .cell{padding:13px 0}
+  .cells+.rule+.cells .cell:first-child{border-top:0}
+  .cell+.cell{border-top:1px solid #e4e7e4}
+  .cell h3{font-size:16.5px;max-width:none;margin-left:0}
+  .cell p{font-size:15px;margin-top:6px;max-width:none;margin-left:0}
+
+  .steps-wrap{padding-top:24px}
+  .steps-wrap h2{font-size:19px}
+  .steps{grid-template-columns:1fr 1fr;gap:20px 10px;margin-top:18px}
+  .step .n{font-size:24px}
+  .step b{font-size:15.5px;margin-top:7px}
+  .step span{font-size:13.5px}
+
+  .logos-wrap{padding-top:30px;padding-bottom:8px}
+  .logos-cap{font-size:13.5px}
+  .logos{grid-template-columns:repeat(2,1fr);row-gap:22px;margin-top:18px}
+  .logos img{width:auto!important;max-width:120px;max-height:32px;object-fit:contain}
+
+  footer{flex-direction:column;align-items:center;text-align:center;padding:24px 20px 18px;gap:16px}
+  footer .r{text-align:center}
+  footer .r h3{font-size:19px}
+  footer .r p{font-size:14px}
+  footer .l{text-align:center}
+  footer .l .b{font-size:11.5px}
+  footer .l .u{font-size:16.5px}
+  footer .l .i{font-size:11.5px}
+
+}
+</style>
+</head>
+<body data-ground="sage">
+<div class="page-field" aria-hidden="true"></div>
+<div class="page">
+
+  <header class="hero">
+    <div class="photo"><img src="/img/img00.png" alt=""></div>
+    <span class="dash"></span>
+    <div class="txt">
+      <div class="brand">UNIQUE HOTELS OF ISRAEL</div>
+      <h1>מתנה לעובדים במלונות המיוחדים בישראל</h1>
+      <p class="script">מתנה אחת - חוויה שלא שוכחים.</p>
+    </div>
+  </header>
+
+  <section class="product pad">
+    <div class="shot">
+      <img src="/img/img01.png" alt="Unique Cash">
+      <p class="cap">יותר מ־20 מלונות מיוחדים, מצפת ועד אילת</p>
+    </div>
+    <div class="copy">
+      <h2>מהו המוצר?</h2>
+      <div class="eyebrow">Unique Cash</div>
+      <p class="statement">שובר לילה + ארוחת בוקר <br>במלונות הקולקציה.</p>
+      <p class="b">הארגון שולח שובר דיגיטלי. העובד בוחר את המלון, המועד והחוויה שמתאימים לו.</p>
+      <p class="b">בנוסף: שובר כספי פתוח בסכום לבחירתכם, שוברי ספא, ארוחות שף וחוויות מלון.</p>
+    </div>
+  </section>
+
+  <section class="diff pad">
+    <h2>מה מבדל אותנו מכרטיסי מתנה אחרים?</h2>
+    <hr class="rule first">
+    <div class="cells">
+      <div class="cell">
+        <h3>חוויה שזוכרים</h3>
+        <p>מתנה אישית ובוטיקית - לא שובר כללי ששוכחים ממנו מהר</p>
+      </div>
+      <div class="cell">
+        <h3>חופשה אמיתית, לא עוד קנייה</h3>
+        <p>לא מומר לקניות בסופר או למוצר - העובד באמת יוצא לנפוש</p>
+      </div>
+    </div>
+    <hr class="rule">
+    <div class="cells">
+      <div class="cell">
+        <h3>מלונות בוטיק בלבד</h3>
+        <p>שובר הלילה כולל ארוחת בוקר, בפריסה מצפון ועד אילת</p>
+      </div>
+      <div class="cell">
+        <h3>מתאים מאוד לצ׳ופרים</h3>
+        <p>עובד מצטיין, יום הולדת, חגים, לידה, חתונה או סתם תודה</p>
+      </div>
+    </div>
+    <hr class="rule">
+  </section>
+
+  <section class="steps-wrap pad">
+    <h2>קל לקנות. כיף לקבל. פשוט לממש.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><b>בוחרים</b><span>שובר לילה או סכום</span></div>
+      <div class="step"><div class="n">2</div><b>שולחים</b><span>שובר דיגיטלי לעובד</span></div>
+      <div class="step"><div class="n">3</div><b>העובד בוחר מלון</b><span>מתוך הקולקציה</span></div>
+      <div class="step"><div class="n">4</div><b>יוצאים לחופשה</b><span>לפי תנאי השובר והמלון</span></div>
+    </div>
+  </section>
+
+  <section class="logos-wrap pad">
+    <div class="logos-cap">בין המלונות הכלולים בשובר הלילה:</div>
+    <div class="logos">
+      <img src="/img/img02.png" alt="עכותיקה" style="width:calc(44.75 * var(--u))">
+      <img src="/img/img03.png" alt="The Saul" style="width:calc(56.02 * var(--u))">
+      <img src="/img/img04.png" alt="Mayer House" style="width:calc(64.12 * var(--u))">
+      <img src="/img/img05.png" alt="INK" style="width:calc(41.74 * var(--u))">
+      <img src="/img/img06.png" alt="The Efendi Hotel" style="width:calc(79.09 * var(--u))">
+      <img src="/img/img07.png" alt="Oaks Hotel" style="width:calc(75.37 * var(--u))">
+      <img src="/img/img08.png" alt="Amara" style="width:calc(62.44 * var(--u))">
+      <img src="/img/img09.png" alt="Alegra" style="width:calc(64.35 * var(--u))">
+    </div>
+  </section>
+
+  <footer>
+    <div class="r">
+      <h3>בואו ניצור יחד מתנות שאנשים זוכרים</h3>
+      <p>צ׳ופרים לעובדים • עובד מצטיין • ימי הולדת • חגים</p>
+    </div>
+    <div class="l">
+      <div class="b">UNIQUE HOTELS OF ISRAEL</div>
+      <a class="u" href="https://uniquehotels.gift-shop.co.il/group-gift-cards/">uniquehotels.co.il</a>
+      <div class="i">israel.unique.hotels</div>
+    </div>
+  </footer>
+
+
+</div>
+</body>
+</html>
